@@ -141,6 +141,16 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
+.btn-socialmedia{
+    border-radius: 50%;
+    background-color: #c91427;
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+.img-logo_socialmedia{
+    height: 20px;
+}
 .contato p{
     display: flex;
     padding-inline: 10px;

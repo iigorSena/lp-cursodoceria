@@ -55,6 +55,7 @@
     #texto-complem_mobile{
         display: block;
         background-color: #c91427;
+        animation: fadeIn 1s ease-in-out;
     }
     #texto-complem_mobile p{
         margin-block:0px;
