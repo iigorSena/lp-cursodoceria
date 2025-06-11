@@ -1,0 +1,71 @@
+@media (max-width: 900px) {
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #4e272b;
+        line-height: 1.6;
+    }
+    
+    header {
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+    .hero-content {
+        display: flex;
+        justify-content: center;
+        animation: fadeIn 1s ease-in-out;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    #area-img {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: row;
+        background-color: #eedcde;
+    }
+    #img1{
+        width: 100%;
+    }
+    #img2{
+        display: none;
+    }
+    .hero-text{
+        width: 50%;
+        color: #c91427;
+        text-align: right;
+        position: absolute;
+        right: 20px;
+        top:50px;
+    }
+    .hero-text h1 {
+        font-size: 25pt;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .hero-text p{
+        font-size: 12pt;
+        font-weight: bold;
+        margin-bottom: 0px;
+        display: none;
+    }
+    #texto-complem_mobile{
+        display: block;
+        background-color: #c91427;
+    }
+    #texto-complem_mobile p{
+        margin-block:0px;
+        color: white;
+        padding-inline: 20px;
+        text-align: right;
+        padding-block: 10px;
+    }
+    .conteudo h1{
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 20pt;
+    }
+}
