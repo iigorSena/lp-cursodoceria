@@ -16,6 +16,7 @@ header {
 .hero-content {
   display: flex;
   justify-content: center;
+  align-items: center;
   animation: fadeIn 1s ease-in-out;
   border-radius: 10px;
   width: 100%;
@@ -88,9 +89,8 @@ header {
 }
 
 .carga {
-  font-size: 1.1rem;
+  font-size: 15pt;
   margin-top: 1rem;
-  color: #c91427;
   font-weight: bold;
 }
 
@@ -98,9 +98,13 @@ header {
   padding: 2rem 1rem;
   text-align: center;
 }
-
+.inscricao h1{
+  font-size: 30pt;
+  color: #b81121;
+}
 #inscricaoForm {
-  max-width: 400px;
+  width: 30%;
+  min-width: 50%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -115,19 +119,31 @@ header {
   font-size: 1rem;
 }
 
+#inscricaoForm input:focus{
+  outline: 2px solid #c91427;
+  border: none;
+}
+
 #inscricaoForm input {
-  border: 1px solid #ccc;
+  border: 1px solid #e18e96;
 }
 
 #inscricaoForm button {
   background-color: #ef1d31;
   color: white;
+  font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 #inscricaoForm button:hover {
-  background-color: #c91427;
+  background-color: #b81121;
+}
+#resposta{
+  color: #b81121;
+  font-weight: bold;
+  margin-block: 2px;
+  font-size: 16pt;
 }
 
 footer {
@@ -147,12 +163,16 @@ footer {
     border: none;
     height: 30px;
     width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .img-logo_socialmedia{
     height: 20px;
 }
 .contato p{
     display: flex;
+    align-items: center;
     padding-inline: 10px;
     gap:5;
 }
@@ -160,10 +180,17 @@ footer {
     width: 100%;
     background-color: #33191c;
 }
+.frase{
+  margin-block: 2px;
+  color: #e18e96;
+  font-weight: bold;
+}
 #direitos p{
     text-align: center;
     margin-block: 0px;
 }
+
+
 /* Efeitos de aparição */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
