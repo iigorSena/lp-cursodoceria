@@ -21,6 +21,7 @@ header {
   border-radius: 10px;
   width: 100%;
 }
+
 #texto-complem_mobile{
     display: none;
 }
@@ -68,7 +69,9 @@ header {
     height: 20px;
     margin-right: 10px;
 }
-
+.icon-doce:hover{
+  transform: scale(1.02);
+}
 .lista-conteudo {
   list-style: none;
   padding: 0;
@@ -77,7 +80,7 @@ header {
 }
 
 .lista-conteudo li {
-  background: rgba(255, 255, 255, 0.1);
+  background: #ffffff1a;
   margin: 0.5rem 0;
   padding: 0.75rem;
   border-radius: 5px;
@@ -94,6 +97,29 @@ header {
   font-weight: bold;
 }
 
+#depoimentos{
+    transition: background 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eedcde;
+
+}
+#depoimentos h1{
+  text-align: center;
+  font-size: 30pt;
+  color: #b81121;
+}
+#grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img-prova{
+  height: 300px;
+  display: flex;
+  margin-inline: 25px;
+}
 .inscricao {
   padding: 2rem 1rem;
   text-align: center;
@@ -102,6 +128,55 @@ header {
   font-size: 30pt;
   color: #b81121;
 }
+
+#quantidade-alunos{
+  background-color: #e18e96;
+  background-size: cover;       /* cobre toda a área */
+  background-position: center;  /* centraliza a imagem */
+  background-repeat: no-repeat; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 80px;
+  overflow: hidden;
+}
+#linha1{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-weight: bold;
+  color: white;
+  margin-block: 0px;
+  padding-block: 0px;
+}
+#linha1 h1{
+  margin-block: 0px;
+  margin:0px;
+  font-size: 30pt;
+}
+#contador{
+  font-size: 80pt;
+  margin-block: 0px;
+}
+#frase-alunos{
+  margin-block: 0px;
+  margin-top: -40px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-inline:15px;
+  background-color: hwb(0 11% 87% / 0.055);
+  border-radius: 5px;
+  font-size: 18pt;
+}
+#linha2{
+  color: white;
+  font-weight: bold;
+  margin-block: 5px;
+  font-size: 30pt;
+  text-align: center;
+}
+
 #inscricaoForm {
   width: 30%;
   min-width: 50%;
@@ -134,10 +209,14 @@ header {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
+  animation: pulsar 1.5s infinite;
+  transition: transform 0.3s ease;
+
 }
 
 #inscricaoForm button:hover {
   background-color: #b81121;
+  transform: scale(1.05);
 }
 #resposta{
   color: #b81121;
@@ -202,6 +281,13 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 
+
+.fade-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* Responsivo */
 @media (max-width: 600px) {
   .hero-text h1 {
@@ -209,5 +295,18 @@ footer {
   }
   .lista-conteudo li {
     font-size: 0.95rem;
+  }
+}
+
+/* Pulsação */
+@keyframes pulsar {
+  0% {
+    box-shadow: 0 0 0 0 rgba(239, 29, 49, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(239, 29, 49, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 29, 49, 0);
   }
 }

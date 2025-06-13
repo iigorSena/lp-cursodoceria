@@ -70,6 +70,42 @@
         font-size: 20pt;
     }
 
+    #linha1{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-weight: bold;
+    color: white;
+    margin-block: 0px;
+    padding-block: 0px;
+    }
+    #linha1 h1{
+    margin-block: 0px;
+    margin:0px;
+    font-size: 30pt;
+    }
+    #contador{
+    font-size: 80pt;
+    margin-block: 0px;
+    }
+    #frase-alunos{
+        margin-block: 0px;
+        margin-top: -40px;
+        font-weight: bold;
+        color: #ffffff;
+        padding-inline:15px;
+        background-color: hwb(0 11% 87% / 0.055);
+        border-radius: 5px;
+        font-size: 15pt;
+    }
+    #linha2{
+        color: white;
+        font-weight: bold;
+        margin-block: 5px;
+        font-size: 20pt;
+    }
+
+
     #inscricaoForm {
         min-width: 80%;
         margin: 0 auto;
