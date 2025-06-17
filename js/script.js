@@ -25,20 +25,29 @@ const contadorObserver = new IntersectionObserver((entries, obs) => {
 contadorObserver.observe(document.getElementById('quantidade-alunos'));
 
 
-// Controle de form
+// Controle do form de inscrição ============================================================
 const form = document.getElementById('inscricaoForm');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
 
+  const respostaEl = document.getElementById('resposta');
+
+  // Função para atualizar a mensagem com imagem
+  function atualizarMensagem(texto, caminhoImagem) {
+    respostaEl.innerHTML = `<img src="${caminhoImagem}" alt="emoji" style="width: 20px; vertical-align: middle; margin-right: 8px;"> ${texto}`;
+  }
+
+  atualizarMensagem('Inscrevendo...', 'img/lapis.png');
+
   const hoje = new Date();
-  const dataFormatada = hoje.toLocaleDateString('pt-BR'); // ou use ISO se preferir
+  const dataFormatada = hoje.toLocaleDateString('pt-BR');
 
   const dados = {
     inscricao: {
       nome: form.querySelector('[name="nome"]').value,
       email: form.querySelector('[name="email"]').value,
-      dataInscricao: dataFormatada // ⚠️ tem que bater com o nome da coluna
+      dataInscricao: dataFormatada
     }
   };
 
@@ -52,11 +61,11 @@ form.addEventListener('submit', function(e) {
   .then(res => res.json())
   .then(data => {
     console.log(data);
-    document.getElementById('resposta').textContent = 'Inscrição enviada com sucesso!';
+    atualizarMensagem('Inscrição realizada com sucesso!', 'img/emoji-feliz.png');
     form.reset();
   })
   .catch(err => {
     console.error(err);
-    document.getElementById('resposta').textContent = 'Erro ao enviar. Tente novamente.';
+    atualizarMensagem('Erro ao enviar. Tente novamente.', 'img/emoji-triste.png');
   });
 });
