@@ -89,12 +89,18 @@
         font-size: 20pt;
     }
     #depoimentos{
-        padding-bottom: 20px;
+        padding-bottom: 0px;
     }
     #depoimentos h1{
         font-size: 20pt;
     }
-
+    #depoimentos p{
+    display: block;
+    margin-bottom: 0px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 5px;
+    }
 
     #grid {
     width: 95%;
