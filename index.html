@@ -6,6 +6,7 @@
   <title>Curso de Confeiteiro</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-900.css">
+  <link rel="stylesheet" href="css/carrossel.css">
   <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -31,8 +32,9 @@
     </div>
   </header>
 
-  <section class="conteudo" class="conteudo fade-element">
+  <section class="conteudo">
     <h1>O que você vai aprender</h1>
+
     <ul class="lista-conteudo">
       <li>
         <img src="img/doce.png" class="icon-doce">
@@ -53,16 +55,117 @@
     <p class="carga">+ de 20 horas de conteúdo intensivo</p>
   </section>
 
-  <section id="depoimentos" class="conteudo fade-element">
+  <section id="section-clientes">
+
+      <div class="carousel">
+          <div class="carousel-track">
+            <!-- Clonando os itens para efeito infinito -->
+
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo1.jpg" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo2.jpg" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo3.jpg" alt="Imagem 3">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo4.jpg" alt="Imagem 5">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo5.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo6.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo7.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo8.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo9.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo10.jpg" alt="Imagem 4">
+            </div>
+      
+            <!-- Repetição para continuidade -->
+
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo1.jpg" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo2.jpg" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo3.jpg" alt="Imagem 3">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo4.jpg" alt="Imagem 5">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo5.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo6.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo7.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo8.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo9.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Bolos/bolo10.jpg" alt="Imagem 4">
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <section id="depoimentos">
     <h1>Quem já fez, aprova!</h1>
     <grid id="grid">
-      <img src="img/prova1.PNG" class="img-prova">
-      <img src="img/prova2.PNG"class="img-prova">
-      <img src="img/prova3.PNG" class="img-prova">
+      <div id="linha1-img_prova">
+        <img src="img/prova1.PNG" class="img-prova">
+        <img src="img/prova2.PNG"class="img-prova">
+        <img src="img/prova3.PNG" class="img-prova">
+      </div>
+      
+      <div id="linha2-img_prova">
+        <img src="img/prova3.PNG" class="img-prova">
+        <img src="img/prova3.PNG" class="img-prova">
+        <img src="img/prova3.PNG" class="img-prova">
+      </div>
+      
+      <div id="linha3-img_prova">
+        <img src="img/prova3.PNG" class="img-prova">
+        <img src="img/prova3.PNG" class="img-prova">
+        <img src="img/prova3.PNG" class="img-prova">
+      </div>
     </grid>
   </section>
 
-  <section id="quantidade-alunos" class="conteudo fade-element">
+  <section id="quem-somos">
+    <div id="area-title-quem-somos">
+      <h1 id="p1">Quem</h1>
+      <h1 id="p2">somos?</h1>
+    </div>
+
+    <div id="area-txt-quem_somos">
+      O curso é idealizado pela confeiteira Ana Cláudia, que atua há mais de 10 anos no mercado da confeitaria.
+      Apaixonada por ensinar, Ana já formou mais de 650 alunos e é reconhecida por transformar iniciantes em confeiteiros prontos para o mercado.
+      Com uma didática simples e prática, ela compartilha todo seu conhecimento para ajudar você a viver da confeitaria.
+
+    </div>
+  </section>
+
+  <section id="quantidade-alunos">
     <div id="linha1">
       <h1>+de</h1>
       <h2 id="contador">0</h2>
@@ -77,11 +180,14 @@
       <input type="text" name="nome" placeholder="Seu nome" required>
       <input type="email" name="email" placeholder="Seu e-mail" required>
       <button type="submit">Confirmar Inscrição</button>
+      <p class="frase">
+        <img src="img/olhos-coracao.png">
+        Ajudando a realizar sonhos todos os dias...</p>
       <p id="resposta"></p>
     </form>
   </section>
 
-  <footer class="conteudo fade-element">
+  <footer>
     <div class="contato">
       <p>
         <button type="button" class="btn-socialmedia">
@@ -101,7 +207,6 @@
         </button>
         docesonho</p>
     </div>
-    <p class="frase">Ajudando a realizar sonhos todos os dias...</p>
 
     <div id="direitos">
         <p class="direitos">Todos os direitos reservados | Desde 2020</p>

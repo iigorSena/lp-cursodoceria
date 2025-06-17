@@ -54,29 +54,37 @@ header {
 }
 
 .conteudo {
-  padding: 2rem 1rem;
+  padding: 0px;
+  margin-block: 0px;
   background-color: #e18e96;
   color: #fff;
   text-align: center;
   animation: fadeUp 1s ease-in-out;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .conteudo h1{
     color: #ffffff;
     font-weight: bold;
     font-size: 30pt;
+    margin-block: 5px;
 }
 .icon-doce{
     height: 20px;
     margin-right: 10px;
 }
-.icon-doce:hover{
-  transform: scale(1.02);
+
+li:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 8px 25px black;
 }
 .lista-conteudo {
   list-style: none;
-  padding: 0;
-  margin: 1rem auto;
-  max-width: 600px;
+  width: 90%;
+  margin-block: 0px;
 }
 
 .lista-conteudo li {
@@ -93,16 +101,19 @@ header {
 
 .carga {
   font-size: 15pt;
-  margin-top: 1rem;
+  margin-top: 0px;
+  margin-bottom: 20px;
   font-weight: bold;
 }
 
 #depoimentos{
-    transition: background 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #eedcde;
+  transition: background 0.3s;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eedcde;
 
 }
 #depoimentos h1{
@@ -110,16 +121,73 @@ header {
   font-size: 30pt;
   color: #b81121;
 }
-#grid{
+#grid {
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
 }
+
+#linha1-img_prova, #linha3-img_prova{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+#linha2-img_prova{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
 .img-prova{
-  height: 300px;
+  border-radius: 10px;;
+  height: 250px;
   display: flex;
   margin-inline: 25px;
 }
+.img-prova:hover{
+  transform: scale(1.15);
+  box-shadow: 0px 5px 15px black;
+}
+
+
+#quem-somos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f56271;
+  padding-block: 50px;
+}
+#area-title-quem-somos{
+  width: 40%;
+}
+#p1, #p2{
+  font-weight: bold;
+  color: #ffffff;
+}
+#p1{
+  font-size: 80pt;
+  margin-bottom: -45px;
+  margin-top: 0px;
+}
+#p2{
+  font-size: 60pt;
+  margin-top: -50px;
+  margin-left: 50px;
+}
+#area-txt-quem_somos{
+  width: 50%;
+  font-size: 17pt;
+  text-align: left;
+  font-weight: bold;
+  color: white;
+}
+
+
 .inscricao {
   padding: 2rem 1rem;
   text-align: center;
@@ -130,7 +198,7 @@ header {
 }
 
 #quantidade-alunos{
-  background-color: #e18e96;
+  background-color: #b81121;
   background-size: cover;       /* cobre toda a área */
   background-position: center;  /* centraliza a imagem */
   background-repeat: no-repeat; 
@@ -226,9 +294,12 @@ header {
 }
 
 footer {
+  width: 100%;
   background-color: #4e272b;
   color: white;
   text-align: center;
+  padding: 0px;
+  margin-inline: 0px;
 }
 
 .contato{
@@ -261,7 +332,7 @@ footer {
 }
 .frase{
   margin-block: 2px;
-  color: #e18e96;
+  color: #b81121;
   font-weight: bold;
 }
 #direitos p{
